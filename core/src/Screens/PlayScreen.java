@@ -15,11 +15,10 @@ public class PlayScreen implements Screen {
     private Jump game;
     private OrthographicCamera gamecam;
     private Viewport gameport;
-
+    private Hud hud;
 
     public PlayScreen(Jump game){
         this.game = game;
-        texture = new Texture("badlogic.jpg");
         gamecam = new OrthographicCamera();
         gameport = new FitViewport(Jump.V_WIDTH,Jump.V_HEIGHT, gamecam);
         hud = new Hud(game.batch);

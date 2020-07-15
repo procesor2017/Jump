@@ -13,9 +13,7 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 
 
 public class Hud {
-    /**
-     *
-     */
+
     public Stage stage;
     private Viewport viewport;
 
@@ -57,6 +55,6 @@ public class Hud {
         table.add(levelLabel).expandX();
         table.add(countdownLabel).expandX();
 
-        stage.addAction(table);
+        stage.addActor(table);
     }
 }
